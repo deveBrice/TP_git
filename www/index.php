@@ -2,13 +2,12 @@
 
 require "conf.inc.php";
 
-function myAutoloader($class){
-	$classPath = "core/".$class.".class.php";
-	$classModel = "models/".$class.".class.php";
+
+$classModel = "models/".$class.".class.php";
 	if(file_exists($classPath)){
 		include $classPath;
 	}else if(file_exists($classModel)){
-		include $classModel;
+	include $classModel;
 	}
 }
 
@@ -40,3 +39,5 @@ if( file_exists($cPath) ){
 }else{
 	die("Le fichier controller ".$c." n'existe pas");
 }
+echo "Bonjour le monde";
+

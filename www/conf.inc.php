@@ -4,3 +4,4 @@ define("DBHOST", "database");
 define("DBNAME", "course-php-legacy");
 define("DBUSER", "root");
 define("DBPWD", "course-legacy");
+echo "deuxieme fichier";
