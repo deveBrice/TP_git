@@ -65,7 +65,8 @@ class UsersController{
 
 			if(empty($errors)){
 				$token = md5(substr(uniqid().time(), 4, 10)."mxu(4il");
-                // TODO: connexion
+				// TODO: connexion
+				var_dump($token);
 			}
 
 		}
