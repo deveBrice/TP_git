@@ -5,7 +5,8 @@
 
 
 
-          <?php $this->addModal("form", $form);?>
+	  <?php $this->addModal("form", $form);
+		echo "titio";?>
 
 
 

@@ -15,7 +15,9 @@ function myAutoloader($class){
 // La fonction myAutoloader est lancé sur la classe appelée n'est pas trouvée
 spl_autoload_register("myAutoloader");
 
-// Récupération des paramètres dans l'url - Routing
+echo 'toty';
+	
+	// Récupération des paramètres dans l'url - Routing
 $slug = explode("?", $_SERVER["REQUEST_URI"])[0];
 $routes = Routing::getRoute($slug);
 extract($routes);
